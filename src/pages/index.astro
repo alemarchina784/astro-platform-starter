@@ -1,19 +1,60 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
+const azienda = "Gianoglio Suspension";
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{azienda} – Sospensioni MTB Enduro & Downhill</title>
+    <meta name="description" content="Vendita, revisione e taratura sospensioni MTB per enduro e downhill. Test personalizzati con acquisizione dati." />
+  </head>
+
+  <body style="font-family: Arial, sans-serif; margin:0; background:#0b0b0b; color:#fff;">
+
+    <!-- HERO -->
+    <section style="padding:80px 20px; text-align:center; background:#000;">
+      <h1 style="font-size:48px; margin-bottom:20px;">
+        Sospensioni MTB <span style="color:#e10600;">Race Tuned</span>
+      </h1>
+      <p style="font-size:20px; max-width:800px; margin:auto;">
+        Vendita, revisione e taratura sospensioni per <strong>enduro</strong> e <strong>downhill</strong>.
+        Performance reali, test sul campo, dati concreti.
+      </p>
+      <a href="/contatti" style="display:inline-block; margin-top:30px; padding:15px 30px; background:#e10600; color:#fff; text-decoration:none; font-weight:bold;">
+        Contattami
+      </a>
+    </section>
+
+    <!-- SERVIZI -->
+    <section style="padding:60px 20px; max-width:1100px; margin:auto;">
+      <h2 style="text-align:center; margin-bottom:40px;">Servizi</h2>
+
+      <ul style="line-height:2; font-size:18px;">
+        <li>✔ Vendita sospensioni MTB</li>
+        <li>✔ Revisione e manutenzione completa</li>
+        <li>✔ Taratura personalizzata rider-based</li>
+        <li>✔ Test su campo con acquisizione dati</li>
+        <li>✔ Specializzato Enduro & Downhill</li>
+      </ul>
+    </section>
+
+    <!-- PERCHÉ -->
+    <section style="padding:60px 20px; background:#111;">
+      <h2 style="text-align:center; margin-bottom:30px;">Perché scegliere Gianoglio Suspension</h2>
+      <p style="max-width:900px; margin:auto; font-size:18px; line-height:1.6;">
+        Ogni taratura nasce da test reali sul campo. Analizzo il comportamento della sospensione
+        in base al rider, al terreno e allo stile di guida. Nessun settaggio standard:
+        solo performance misurabili.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding:60px 20px; text-align:center;">
+      <h2>Porta la tua bici al massimo livello</h2>
+      <a href="/contatti" style="display:inline-block; margin-top:20px; padding:15px 30px; background:#e10600; color:#fff; text-decoration:none;">
+        Prenota una taratura
+      </a>
+    </section>
+
+  </body>
+</html>
